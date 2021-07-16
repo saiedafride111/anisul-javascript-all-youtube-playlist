@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .my-style {
+            color: red;
+            font-size:20px;
+        }
+    </style>
+</head>
+<body>
+    <button id="click-me">Click me 1</button>
+    <button id="click-me-2">Click me 2</button>
+
+    <p>This is Paragraph</p>
+
+    <script>
+        var clickMe = document.querySelector('#click-me');
+        clickMe.addEventListener('click', mtFunc);
+
+        function mtFunc(){
+            alert('Hello')
+        }
+
+        var clickMe2 = document.querySelector('#click-me-2');
+        clickMe2.addEventListener('click', function(){
+            alert('Hi');
+        })
+
+        var para = document.querySelector("p");
+        para.addEventListener('mouseover', function(){
+            para.classList.add("my-style")
+        })
+        para.addEventListener('mouseout', function(){
+            para.classList.remove("my-style")
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="#" target="_blank">No Visit Google</a>
+
+    <div id="my-div" class="my-div-class" style="background-color: red">
+        <h1>Hello</h1>
+        <h1>Bye</h1>
+    </div>
+
+    <script>
+        var link = document.getElementsByTagName("a")[0];
+        
+        link.innerHTML = "Visit Google";
+        link.style.textDecoration = "none";
+        link.style.backgroundColor = "green";
+        link.style.padding = "10px";
+        link.style.fontSize = "30px";
+        link.style.color = "white";
+
+        link.href = "https://www.behance.net/saiedafride11"
+
+        document.getElementsByTagName("h1")[1].innerHTML = "Just Now Bye?????????"
+
+        // Creating Html Element
+        var heading3 = document.createElement("h1");
+        var text = document.createTextNode("This is Heading - 3");
+        heading3.appendChild(text);
+
+        var myDiv = document.getElementById("my-div");
+        myDiv.appendChild(heading3);
+
+        // Remove Html Element
+        var removeHeading3 = document.getElementsByTagName("h1")[2];
+        myDiv.removeChild(removeHeading3)
+
+        //// First Add Html Element
+        var heading0 = document.createElement("h1");
+        var text0 = document.createTextNode("This is Heading - 0");
+        heading0.appendChild(text0);
+
+        var addHeading0 = document.getElementsByTagName("h1")[0];
+        myDiv.insertBefore(heading0, addHeading0);
+
+        //// class List
+        document.getElementById("my-div").classList;
+        document.getElementById("my-div").classList.add("my-div-class-two");
+        document.getElementById("my-div").classList.remove("my-div-class-two");
+
+    </script>
+</body>
+</html>

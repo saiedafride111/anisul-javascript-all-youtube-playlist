@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="heading1">This is Heading-1</h1>
+
+    <h1 id="heading2">This is Heading-2</h1>
+
+    <h1 class="heading3">This is Heading-3</h1>
+
+    <h1 class="heading4">This is Heading-3</h1>
+
+    <h1>This is Heading-5</h1>
+
+
+    <script>
+        var myHeading1 = document.getElementById("heading1")
+        myHeading1.innerHTML = "Hello";
+
+        document.getElementById("heading2").innerHTML = "Bye";
+
+        document.getElementsByClassName("heading3")[0].innerHTML = "Goodbye Goodbye"; 
+
+        document.getElementsByClassName("heading4")[0].innerHTML = "Class Check";
+
+        document.getElementsByTagName("h1")[4].innerHTML = "Hi Hi Hi"
+
+
+    </script>
+
+</body>
+</html>

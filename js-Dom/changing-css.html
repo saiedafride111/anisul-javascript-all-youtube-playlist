@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .para-style2{
+            color:white;
+            background-color:red;
+            font-size:30px;
+            font-weight: bold;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <p id="para-style">This is a paragraph</p>
+    <button onclick="addStyle();">Add Style</button>
+
+    <p id="para-style2">This is a paragraph</p>
+    <button onclick="addStyle2();">Add Style</button>
+    <button onclick="removeStyle()">Remove Style</button>
+
+    <script>
+        function addStyle(){
+            var paraStyle = document.querySelector("#para-style");
+            paraStyle.style.backgroundColor = "green";
+            paraStyle.style.color = "white";
+            paraStyle.style.fontSize = "40px";
+        }
+
+        var paraStyle2 = document.querySelector("#para-style2");
+        function addStyle2(){
+            paraStyle2.classList.add("para-style2")
+        }
+        function removeStyle(){
+            paraStyle2.classList.remove("para-style2")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            width: 100px;
+            height: 50px;
+            background-color:red;
+            border: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <button class="myButton">a</button>
+    <button class="myButton">b</button>
+    <button class="myButton">c</button>
+
+    <script>
+        for(var i=0; i < 3; i++){
+            document.querySelectorAll(".myButton")[i].addEventListener("click", function(){
+                var text = this.innerHTML;
+                console.log(text);
+
+                // switch(text){
+                //     case "a":
+                //         var audio = new Audio("01.wav");
+                //         audio.play();
+                //     case "b":
+                //         var audio = new Audio("02.wav");
+                //         audio.play();
+                //     case "c":
+                //         var audio = new Audio("03.wav");
+                //         audio.play();
+                // }
+
+                // if(text == "a"){
+                //     var audio = new Audio("01.wav");
+                //     audio.play();
+                // }
+                // else if(text == "b"){
+                //     var audio = new Audio("02.wav");
+                //     audio.play();
+                // }
+                // else if(text == "c"){
+                //     var audio = new Audio("03.wav");
+                //     audio.play();
+                // }
+                // else{
+                //     alert("Error")
+                // }
+
+
+                audioPlay(text)
+            })
+        }
+
+
+        function audioPlay(text){
+            // switch(text){
+                //     case "a":
+                //         var audio = new Audio("01.wav");
+                //         audio.play();
+                //     case "b":
+                //         var audio = new Audio("02.wav");
+                //         audio.play();
+                //     case "c":
+                //         var audio = new Audio("03.wav");
+                //         audio.play();
+                // }
+
+                if(text == "a"){
+                    var audio = new Audio("01.wav");
+                    audio.play();
+                }
+                else if(text == "b"){
+                    var audio = new Audio("02.wav");
+                    audio.play();
+                }
+                else if(text == "c"){
+                    var audio = new Audio("03.wav");
+                    audio.play();
+                }
+                else{
+                    alert("Error")
+                }
+        }
+    </script>
+</body>
+</html>

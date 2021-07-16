@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="alert('Plese No Click')">Click me 1</button>
+
+    <button onclick="click2()">Click me 2</button>
+
+
+    <button onclick="click3()">Click me 3</button>
+    <p id="click3">Click me 3</p>
+
+
+    <!-- Tour -->
+    <button onclick="tour1()">Tour 1</button>
+    <button onclick="tour2()">Tour 2</button>
+    <button onclick="tour3()">Tour 3</button>
+
+    <img id="myImage" src="#" alt="" height="200" width="200">
+
+    <script>
+        function click2(){
+            alert('No Click Me 2')
+        }
+
+        function click3(){
+            document.getElementById('click3').innerHTML = "No Click Me 3";
+        }
+
+
+        var myImage = document.getElementById('myImage');
+        function tour1(){
+            myImage.src = "../images/01.jpg";
+        }
+        function tour2(){
+            myImage.src = "../images/02.jpg";
+        }
+        function tour3(){
+            myImage.src = "../images/03.jpg";
+        }
+    </script>
+</body>
+</html>
